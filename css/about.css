@@ -1,0 +1,8 @@
+.about__polygon {
+  height: 80px;
+  transform: translateZ(0);
+}
+
+.fa-js {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Tailwind CSS Animated Template</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="css/compiled-tailwind.min.css" />
+  <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    /> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/mainSplash.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/team.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body class="text-gray-800 antialiased">
+  <!-- Navigation Section starts -->
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <!-- Nav Left Side starts -->
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+          href="https://www.duskovokic.com">
+          <!-- Nav Title -->
+          Designed by Душко Вокић
+        </a>
+        <!-- Hamburger Menu (Mobile) -->
+        <button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <!-- Icon -->
+          <i class="text-white fas fa-bars"></i>
+        </button>
+      </div>
+      <!-- Nav Left Side ends -->
+
+      <!-- Nav Flex Row starts -->
+      <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+        id="example-collapse-navbar">
+        <ul class="flex flex-col lg:flex-row list-none mr-auto">
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://duskovokic.com">
+              About
+              <i class="lg:text-gray-300 text-gray-500 fa-solid fa-question text-lg leading-lg mr-2"></i>
+              Me
+            </a>
+          </li>
+        </ul>
+
+        <!-- Nav Right Side starts -->
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://www.facebook.com/Duskorsl/">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook-f text-lg leading-lg"></i>
+              <span class="lg:hidden inline-block ml-2">Share</span>
+            </a>
+          </li>
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="www.linkedin.com/in/duško-vokić-0337a2106">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin-in text-lg leading-lg"></i>
+              <span class="lg:hidden inline-block ml-2">Post</span>
+            </a>
+          </li>
+          <!-- Social Media Button -->
+          <li class="flex items-center">
+            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+              href="https://github.com/D-vokic">
+              <!-- Icon -->
+              <i class="lg:text-gray-300 text-gray-500 fab fa-github-alt text-lg leading-lg"></i>
+              <span class="lg:hidden inline-block ml-2">Gist</span>
+            </a>
+          </li>
+          <!-- Button -->
+          <li class="flex items-center">
+            <a href="assets/duskoVokicCv.pdf" target="_blank">
+              <!-- <a href="assets/duskoVokicCv.pdf" download> -->
+              <button
+                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                type="button" style="transition: all 0.15s ease 0s;">
+                CV
+                <i class="fas fa-arrow-alt-circle-down"></i>
+                Download
+              </button>
+            </a>
+          </li>
+        </ul>
+        <!-- Nav Right Side ends -->
+      </div>
+      <!-- Nav Flex Row ends -->
+    </div>
+  </nav>
+  <!-- Navigation Section ends -->
+
+  <!-- Splash Page starts -->
+  <main>
+    <div class="splash__div__wrapper relative pt-16 pb-32 flex content-center items-center justify-center">
+      <!-- Background Image -->
+      <div class="splash__div__wrapper__bg__image absolute top-0 w-full h-full bg-center bg-cover">
+        <!-- Overlay -->
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+                Welcome to SoHo iLone Web Dev Studio.
+              </h1>
+              <p class="mt-4 text-lg text-gray-300" data-aos="fade-right" data-aos-delay="1000">
+                Front-End Web development - Wordpress - Basic SEO optimization - Website maintenance - Troubleshooting
+                computer issues - Consultations
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div class="splash__div__wrapper__polygon__shape top-auto bottom-0 left-0 right-0 w-full absolute">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- Splash Page ends -->
+
+    <!-- Services Section starts-->
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <!-- 3 Card Section -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <!-- Card -->
+          <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1200">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <!-- Icon -->
+                  <i class="fab fa-webflow"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">WEB DESIGN</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  My goal is to create interfaces that effectively communicate information and engage users, ultimately
+                  enhancing the overall browsing experience. Creating websites is my passion.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="1400">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <!-- Icon -->
+                  <i class="fas fa-comments-dollar"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">SEO OPTIMIZATION</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  The goal of SEO optimization is to enhance a website's relevance, authority, and trustworthiness in
+                  the eyes of search engines, ultimately leading to higher rankings and increased visibility for
+                  relevant search queries. Believe me: I make Google love you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-left" data-aos-delay="1600">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <!-- Icon -->
+                  <i class="far fa-life-ring"></i>
+                </div>
+                <!-- Text Box -->
+                <h6 class="text-xl font-semibold">WEBSITE MAINTENANCE</h6>
+                <p class="mt-2 mb-4 text-gray-600">
+                  Website maintenance involves the regular updating, monitoring, and managing of a website to ensure its
+                  smooth functioning, security, and relevance. Remmember: Only a healthy site is a good site.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Box and Card Container -->
+        <div class="flex flex-wrap items-center mt-32">
+          <!-- Text Box Container -->
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
+            <!-- Text Box -->
+            <div
+              class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              Trying New Things is Great!
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              In the ever-evolving landscape of frontend development, trying new things isn't just an option; it's a
+              mindset. By embracing innovation, diversity, and creativity, I can unlock new possibilities, stay agile,
+              and deliver exceptional digital experiences.
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              Remember, trying new things is not just great—it's essential.
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              If you're looking to elevate your digital presence and create immersive frontend experiences that
+              captivate your audience, consider partnering with me, a frontend developer. Together, we can turn your
+              vision
+              into reality.
+            </p>
+            <a href="https://github.com/D-vokic?tab=repositories" class="font-bold text-gray-800 mt-8">Check my projects
+              on GitHub! </a>
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+            <div
+              class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img alt="..."
+                src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="w-full align-middle rounded-t-lg" />
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                  <polygon points="-30,95 583,95 583,65" class="text-orange-500 fill-current"></polygon>
+                </svg>
+                <!-- Text Box -->
+                <h4 class="text-xl font-bold text-white">
+                  More Than Meets The Eye
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  I feel like I've mentioned before that I'm a frontend developer, and like a well-designed webpage,
+                  that fact continues to render true, even to this very moment.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section ends -->
+
+    <!-- About Section starts -->
+    <section class="relative py-20">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="about__polygon bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="flip-right" data-aos-delay="1000">
+            <!-- Image -->
+            <img alt="..." class="max-w-full rounded-lg shadow-lg"
+              src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736401_1280.png" />
+            <a href="https://github.com/D-vokic?tab=repositories" class="font-bold text-gray-800 mt-8">Check my projects
+              on GitHub! </a>
+          </div>
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left">
+            <div class="md:pr-12">
+              <div
+                class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                <!-- Icon -->
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h3 class="text-3xl font-semibold">Constant Improvement: The Journey of a Web Developer</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                Constant improvement is crucial for web developers, with JavaScript mastery being a key focus. Regular
+                practice, community engagement, and staying updated with the latest developments are essential
+                aspects of this journey. Embracing challenges, seeking feedback, and committing to lifelong learning are
+                vital for success in the dynamic field of web development.
+              </p>
+              <!-- List -->
+              <ul class="list-none mt-6">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fab fa-js"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                        Regular Practice
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fab fa-js"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Community Engagement</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3">
+                        <!-- Icon -->
+                        <i class="fab fa-js"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">Continued Education</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section ends -->
+
+    <!-- Team Section -->
+    <section class="pt-20 pb-48">
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box -->
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold">Here are my heroes</h2>
+            <p class="text-lg leading-relaxed m-4 text-gray-600">
+              Favorite characters among web developers can vary, but here are a few that are often popular among them:
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap">
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="..." src="https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg"
+                class="team__img shadow-lg rounded-full max-w-full mx-auto" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Linus Torvalds</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Creator of the Linux kernel
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.linkedin.com/in/du%C5%A1ko-voki%C4%87-0337a2106" class="fab fa-linkedin"></a>
+                  </button>
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://github.com/D-vokic?tab=repositories"><i class="fab fa-github"></i></a>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.facebook.com/Duskorsl/" class="fab fa-facebook"></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="..." src="https://upload.wikimedia.org/wikipedia/commons/2/23/Dennis_Ritchie_2011.jpg"
+                class="team__img shadow-lg rounded-full max-w-full mx-auto" style="max-width: 140px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Dennis Ritchie</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Co-creator of the C
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.linkedin.com/in/du%C5%A1ko-voki%C4%87-0337a2106" class="fab fa-linkedin"></a>
+                  </button>
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://github.com/D-vokic?tab=repositories"><i class="fab fa-github"></i></a>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.facebook.com/Duskorsl/" class="fab fa-facebook"></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="..."
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Bjarne-stroustrup_%28cropped%29.jpg"
+                class="team__img shadow-lg rounded-full max-w-full mx-auto" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Bjarne Stroustrup</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  Creator of the C++
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.linkedin.com/in/du%C5%A1ko-voki%C4%87-0337a2106" class="fab fa-linkedin"></a>
+                  </button>
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://github.com/D-vokic?tab=repositories"><i class="fab fa-github"></i></a>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.facebook.com/Duskorsl/" class="fab fa-facebook"></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="800">
+            <div class="px-6">
+              <!-- Image -->
+              <img alt="..."
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Donald_Ervin_Knuth_%28cropped%29.jpg"
+                class="team__img shadow-lg rounded-full max-w-full mx-auto" />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold">Donald Knuth</h5>
+                <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  The Art of Computer Programming
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.linkedin.com/in/du%C5%A1ko-voki%C4%87-0337a2106" class="fab fa-linkedin"></a>
+                  </button>
+                  <button class="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://github.com/D-vokic?tab=repositories"><i class="fab fa-github"></i></a>
+                  </button>
+                  <button class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <!-- Icon -->
+                    <a href="https://www.facebook.com/Duskorsl/" class="fab fa-facebook"></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/D-vokic?tab=repositories" class="team__check font-bold text-gray-800 mt-8">Check
+            my projects on GitHub!</a>
+        </div>
+      </div>
+    </section>
+    <!-- Team Section ends -->
+
+    <!-- Contact Section starts -->
+    <section class="pb-20 relative block bg-gray-900">
+      <!-- Making Polygon Shape in Background -->
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0);">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <!-- Text Box -->
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">Why me?</h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+              Together, we can create something extraordinary. I invite you to be part of our journey and together,
+              let's build the future of the internet.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap mt-12 justify-center">
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="600">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Enhanced UX Optimization
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              I focus on enhancing user experience (UX) by optimizing web pages or applications. This involves ensuring
+              faster page loading times, designing intuitive user interfaces, etc.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="400">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Increased Functionality
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              With my web development expertise, I can introduce new features and functionalities to websites or
+              applications, enabling users to accomplish more tasks efficiently.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Reliability and Security</h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              I implement robust security measures to safeguard user data against cyber threats and regularly update
+              software. Users can trust in the stability and security of the platforms I create.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <!-- Container -->
+      <div class="container mx-auto px-4" data-aos="fade-in">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold">Want to work with me?</h4>
+                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                  Complete this form and I will get back to you in 24 hours.
+                </p>
+                <!-- Name -->
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                    Full Name
+                  </label>
+                  <input type="text"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+                </div>
+                <!-- Email -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                    Email
+                  </label>
+                  <input type="email"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                </div>
+                <!-- Message -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                    Message
+                  </label>
+                  <textarea rows="4" cols="80"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Type a message..."></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button" style="transition: all 0.15s ease 0s;">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </main>
+
+  <!-- Footer Section starts-->
+  <footer class="relative bg-gray-300 pt-8 pb-6">
+    <!-- Making Polygon Shape in Background -->
+    <div
+      class="footer__polygon bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div class="container mx-auto px-4">
+      <!-- Text Box Container -->
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+            Find me on any of these platforms, I respond 1-2 business days.
+          </h5>
+          <!-- Social Media Buttons -->
+          <div class="mt-6">
+            <a href="https://www.linkedin.com/in/du%C5%A1ko-voki%C4%87-0337a2106" target="_blank">
+              <i
+                class="fab fa-linkedin bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+            <a href="https://www.facebook.com/Duskorsl/" target="_blank">
+              <i
+                class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+            <a href="https://github.com/D-vokic" target="_blank">
+              <i
+                class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <!-- List 1 -->
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful Links</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://duskovokic.com/ugoaktiv/profesionalni-razvoj/">About Ме</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/D-vokic">Github</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/D-vokic?tab=repositories">My Projects</a>
+                </li>
+              </ul>
+            </div>
+            <!-- List 2 -->
+            <div class="w-full lg:w-4/12 px-4">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://github.com/D-vokic/Table-Room-Booking-System/blob/main/LICENSE.md">MIT License</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://duskovokic.com/ugoaktiv/">Maître d’hôtel</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="https://duskovokic.com/">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Line Break -->
+      <hr class="my-6 border-gray-400" />
+      <!-- Footer Text -->
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2024 Tailwind Project by
+            <a href="https://duskovokic.com" class="text-gray-600 hover:text-gray-900">Душко</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section ends-->
+</body>
+
+<!-- AOS.js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/aos.js"></script>
+
+<!-- Navigation JS -->
+<script src="js/navigation.js"></script>
+
+</html>
