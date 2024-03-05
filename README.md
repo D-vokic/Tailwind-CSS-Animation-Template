@@ -2,6 +2,10 @@
 
 This repository contains an animation template built using Tailwind CSS with AOS animations.
 
+## Demo
+
+You can view a live demo of this animation template [here](https://d-vokic.github.io/Tailwind-CSS-Animation-Template/).
+
 ## Overview
 
 Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override. AOS, on the other hand, is a small library to animate elements on your page as you scroll.
@@ -36,10 +40,6 @@ To use this animation template, follow these steps:
 5. Add or modify animations using AOS classes and attributes. Refer to the [AOS documentation](https://michalsnik.github.io/aos/) for more information.
 6. Test your changes locally to ensure everything is working as expected.
 7. Deploy your project to your preferred hosting platform.
-
-## Demo
-
-You can view a live demo of this animation template [here](#).
 
 ## Contributing
 
