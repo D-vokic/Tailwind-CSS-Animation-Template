@@ -2,6 +2,8 @@
 
 This repository contains an animation template built using Tailwind CSS with AOS animations.
 
+![Tailwind CSS Animation Template Preview](screenshot.png)
+
 ## Demo
 
 You can view a live demo of this animation template [here](https://d-vokic.github.io/Tailwind-CSS-Animation-Template/).
